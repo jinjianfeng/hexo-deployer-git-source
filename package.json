@@ -1,7 +1,7 @@
 {
-  "name": "hexo-deployer-git",
+  "name": "hexo-deployer-git-source",
   "version": "2.0.0",
-  "description": "Git deployer plugin of Hexo.",
+  "description": "Git deployer plugin of Hexo deploy source.",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
@@ -11,11 +11,14 @@
   "directories": {
     "lib": "./lib"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "files": [
     "lib/",
     "index.js"
   ],
-  "repository": "hexojs/hexo-deployer-git",
+  "repository": "https://github.com/jinjianfeng/hexo-deployer-git-source.git",
   "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
@@ -23,10 +26,7 @@
     "deploy",
     "deployer"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
-  "maintainers": [
-    "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
-  ],
+  "author": "jianfeng.jjf",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
